@@ -5,7 +5,10 @@ self.addEventListener('install', function(event) {
         '/pwademo/',
         '/pwademo/index.html',
         '/pwademo/style.css',
-        '/pwademo/app.js'
+        '/pwademo/app.js',
+        '/pwademo/image-list.js',
+        '/pwademo/star-wars-logo.jpg'
+      ]);
     })
   );
 });
