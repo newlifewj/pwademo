@@ -5,13 +5,7 @@ self.addEventListener('install', function(event) {
         '/pwademo/',
         '/pwademo/index.html',
         '/pwademo/style.css',
-        '/pwademo/app.js',
-        '/pwademo/image-list.js',
-        '/pwademo/star-wars-logo.jpg',
-        '/pwademo/gallery/bountyHunters.jpg',
-        '/pwademo/gallery/myLittleVader.jpg',
-        '/pwademo/gallery/snowTroopers.jpg'
-      ]);
+        '/pwademo/app.js'
     })
   );
 });
