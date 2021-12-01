@@ -25,7 +25,7 @@ self.addEventListener('fetch', function(event) {
         // and serve second one
         let responseClone = response.clone();
         
-        caches.open('v1').then(function (cache) {
+        caches.open('v11').then(function (cache) {
           cache.put(event.request, responseClone);
         });
         return response;
