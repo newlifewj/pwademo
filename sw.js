@@ -1,7 +1,7 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v11').then(function(cache) {
-      return cache.addAll([
+      return cache.adderAll([
         
         '/pwademo/gallery/myLittleVader.jpg'
       ]);
