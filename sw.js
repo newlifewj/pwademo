@@ -2,10 +2,10 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-        // '/pwademo/',
+        /*'/pwademo/',
         '/pwademo/index.html',
         '/pwademo/style.css',
-        '/pwademo/app.js',
+        '/pwademo/app.js',*/
         '/pwademo/image-list.js',
         '/pwademo/star-wars-logo.jpg',
         '/pwademo/gallery/bountyHunters.jpg',
