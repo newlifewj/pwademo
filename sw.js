@@ -17,7 +17,7 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-  console.log(`---------000-----${event.request.url}`)
+  console.log(`---------001-----${event.request.url}`)
   event.respondWith(caches.match(event.request).then(function(response) {
     // caches.match() always resolves
     // but in case of success response will have value
@@ -25,7 +25,7 @@ self.addEventListener('fetch', function(event) {
       console.log(`---------111-----${event.request.url}`)
       return response;
   } else {
-    console.log(`---------111-----${event.request.url}`)
+    console.log(`---------222-----${event.request.url}`)
       return fetch(event.request).then(function (response) {
         // response may be used only once
         // we need to save clone to put one copy in cache
