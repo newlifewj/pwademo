@@ -22,8 +22,10 @@ self.addEventListener('fetch', function(event) {
     // caches.match() always resolves
     // but in case of success response will have value
     if (response !== undefined) {
+      console.log(`---------111-----${event.request.url}`)
       return response;
   } else {
+    console.log(`---------111-----${event.request.url}`)
       return fetch(event.request).then(function (response) {
         // response may be used only once
         // we need to save clone to put one copy in cache
