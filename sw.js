@@ -3,14 +3,6 @@ self.addEventListener('install', function(event) {
     caches.open('v1').then(function(cache) {
       return cache.addAll([
         '/pwademo/',
-        '/pwademo/index.html',
-        '/pwademo/style.css',
-        '/pwademo/app.js',
-        '/pwademo/image-list.js',
-        '/pwademo/star-wars-logo.jpg',
-        '/pwademo/gallery/bountyHunters.jpg',
-        '/pwademo/gallery/myLittleVader.jpg',
-        '/pwademo/gallery/snowTroopers.jpg'
       ]);
     })
   );
@@ -24,7 +16,7 @@ self.addEventListener('fetch', function(event) {
     if (response !== undefined) {
       console.log(`---------111-----${event.request.url}`)
       return response;
-  } else {
+    } else {
     console.log(`---------222-----${event.request.url}`)
       return fetch(event.request).then(function (response) {
         // response may be used only once
