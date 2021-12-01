@@ -18,12 +18,12 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(caches.match(event.request).then(function(response) {
-    console.log(`---------111-----${event.request.url}`)
+    console.log(`---------111-----`)
     // caches.match() always resolves
     // but in case of success response will have value
     if (response !== undefined) {
       return response;
-    } else {
+  } else {
       // console.log(`---------222-----${event.request.url}`)
       return fetch(event.request).then(function (response) {
         // response may be used only once
