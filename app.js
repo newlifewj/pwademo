@@ -1,5 +1,5 @@
 // register service worker
-/*
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/pwademo/sw.js', { scope: '/pwademo/' }).then(function(reg) {
 
@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
     console.log('Registration failed with ' + error);
   });
 }
-*/
+
 // function for loading each image via XHR
 
 function imgLoad(imgJSON) {
