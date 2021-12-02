@@ -1,7 +1,7 @@
 // register service worker
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/pwademo/gallery/sw.js', { scope: '/pwademo/gallery/' }).then(function(reg) {
+  navigator.serviceWorker.register('/pwademo/gallery/sw.js').then(function(reg) {
 
     if(reg.installing) {
       console.log('Service worker installing');
